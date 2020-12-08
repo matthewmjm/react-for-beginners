@@ -1,5 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# wes bos
+
+node_modules/
+*.zip
+.DS_Store
+.idea
+notes.md
+build/
+
 # dependencies
 /node_modules
 /.pnp

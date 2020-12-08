@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### htaccess
+Here are the .htaccess file we use in the apache deployment video
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+
+### Changes in the 2018 RE-Record
+
+In March 2018 I re-recorded this course. Here are the things that I've updated.
+
+    -Upgrade to React Router 4 Final API
+    -Use React 16.3
+    -Move to external PropTypes Package
+    -Use React's new Refs API, remove function refs
+    -Remove all use of constructors and super() - use class properties instead
+    -Better explain binding, use of this and component instances
+    -Moved from React-addons-css-transition-group to react-transition-group and upgraded from 1.x to 2.x
+    -Use official Firebase package for Auth as re-base is now only for data binding
+    -Move promise based code to async/await
+    -Show how to return multiple elements with React.Fragment
